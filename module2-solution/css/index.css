@@ -1,0 +1,77 @@
+*{
+	box-sizing: border-box;
+
+}
+h1{
+	text-align: center;
+	font-family: sans-serif;
+}
+h2{
+	text-align: center;
+	position: absolute;
+	width:100px;
+	top:-20px;
+	right:0;
+	border: 1px solid black;
+}
+.sections{
+	width: 100%;
+}
+.sec1{
+	background-color: tomato;
+margin: 10px;
+position: relative;
+}
+.sec2{
+	background-color: pink;
+margin: 10px;
+position: relative;
+}
+.sec3{
+	background-color: aqua;
+margin: 10px;
+position: relative;
+}
+.sec1,.sec2,.sec3{
+	border: 1px solid black;
+	
+}
+.sec1 h2{
+	background-color: pink;
+}
+.sec2 h2{
+	background-color: red;
+	color: white;
+}
+.sec3 h2{
+	background-color: khaki;
+}
+section{
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+margin-top: 30px; 	
+height: auto;
+}
+
+/* For Desktop View */
+@media (min-width: 992px){
+	.sec1, .sec2 ,.sec3{
+		float:left;
+		width: 31%;
+	position: relative;
+	}
+}
+/* For Tablet View */
+@media (min-width: 768px) and (max-width: 991px){
+.sec1, .sec2 ,.sec3{
+		float:left;
+		width: 47%;
+	}	
+	.sec3{
+		width: 98%;
+	}
+}
+
+
+
