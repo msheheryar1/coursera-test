@@ -163,13 +163,13 @@ Strong{
 	font-style: italic;
 	color: snow;
 }
-header{
+header, .section {
 font-size: 20px;
 	background-color: tomato;
 padding: 16px;
 color : white;
 	padding-left: 200px;
-	text-align: left;
+	text-align: center;
 	border: 1px solid red;
 }
 header a.inner-contact{
@@ -384,4 +384,53 @@ margin-right: auto;
 .arrows2{	
 	width: 100px;
     transform: translate(-80px,130px);    
+}
+/*****Recent Clients*********/
+.clients{
+	box-sizing: border-box;
+	border-top: 1px solid gray;
+	width: 1100px;
+	text-align:center;
+	margin-left: auto;
+	margin-right: auto;
+	}
+.recentclients{
+	color: blue;
+	text-align: center;
+	width: 200px;
+	background-color: white;
+	font-size: 18px;
+	margin-top: -10px;
+	margin-left: 450px;
+	margin-right: 450px;
+	margin-bottom: 10px;
+}
+.client{
+	cursor: pointer;
+	padding: 5px;
+	padding-left: 10px;
+padding-right: 10px;
+	float: left;
+	width: 180px;
+	height: 100px;
+}
+#acuity{
+	width: 120px;
+	height: 50px;
+	margin-top: 10px;
+}
+#winona{
+	width: 130px;
+	height: 70px;
+	margin-top: 10px;
+}
+#asgrow{
+	width: 140px;
+}
+.arr{
+transform: rotate(90deg);
+}
+.section{
+	padding-left: 0;
+	
 }
