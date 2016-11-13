@@ -1,0 +1,50 @@
+body{
+	background-color: pink;
+	font-size: 16px;
+}
+/* HEADER */
+#header-nav{
+	background-color: purple;
+	border-radius: 0;
+	border: 0;
+}
+#name{
+	font-size: 2em;
+	color: snow;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+.navbar-brand a:hover , .navbar-brand a:focus{
+	text-decoration: none;
+}
+#nav-list a{
+	font-size: 20px;
+    color: white;
+	text-align: center;
+    display: block;
+    background-color: violet;
+    border-bottom: 2px solid pink;
+}
+#nav-list a:hover{
+	background-color: hotpink;
+	color: purple;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
+	border: 2px solid pink;
+}
+.text-center{
+	color: deeppink;
+	font-size: 2em;
+	text-shadow: 1px 0 0.5px black;
+}
+.chicken,.beef,.sushi{
+	border:2px solid hotpink;
+	background-color: bisque;
+	color: purple;
+	padding: 16px;
+	margin-bottom: 16px;
+}
+h3.text-center{
+	color: black;
+	margin-top:10px;
+}
