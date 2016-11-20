@@ -41,6 +41,7 @@ body{
 	border:2px solid hotpink;
 	background-color: bisque;
 	color: purple;
+	margin: 8px;
 	padding: 16px;
 	margin-bottom: 16px;
 }
