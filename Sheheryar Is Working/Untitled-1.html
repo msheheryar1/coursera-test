@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style>
+#lab2{
+	opacity:0;
+	}
+</style>
+<script src="css/jquery-2.1.4.min.js"></script>
+
+</head>
+
+<body>
+<form>
+<label id="lab">abc</label>
+<input id="pass" type="password"/>
+<input type="button" value="Enter" id="btn"/>
+</form><br>
+
+<div id="lab2">
+<h2>Download The File</h2>
+<a href="https://www.facebook.com">DOWNLOAD HERE</a>
+
+</div>
+
+<script>
+
+		
+$(document).ready(function(){
+	$("#btn").click(function(){
+		var c;
+		c=document.getElementById("pass").value;
+		if(c=="SubhanAllah"){
+		$("#lab2").css("opacity","100");
+		}
+		else{
+			}
+		
+		});
+	
+	});		
+</script>
+</body>
+</html>

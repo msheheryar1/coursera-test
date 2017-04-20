@@ -1,0 +1,1 @@
+$(document).ready(function() {$("#as-b").click(function(){var c;c=document.getElementById("as-a").value;if(c=="SubhanAllah")/*////////*/ {$("#abcd").css("opacity","100");}else{}});});
