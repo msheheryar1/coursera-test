@@ -1,0 +1,276 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Cars Slider</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+<script src="js/Jquery.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+
+
+<style>
+
+/*  Slider Start  */
+
+#slider{
+	width:100%;
+	height:600px;
+	position:absolute;
+	top:0;
+	}
+#indiv-slider{
+	width:100%;
+	
+	margin:0 auto;
+	height:70%;
+	margin-top:15%;
+	overflow:hidden;
+	z-index:1;
+	padding:5px;
+	}	
+#slider-maindiv{
+	width:100%;
+	height:200%;
+	position:relative;
+	top:-100%;
+	}
+#slides{
+	width:100%;
+	height:50%;
+	float:left;
+	padding:10px;
+	}
+#inslides{
+	width:100%;
+	height:100%;
+	}	
+#s1-two-cars{
+	width:100%;
+	height:100%;
+	margin:0 auto;
+	padding:10px;
+	
+	}	
+#s1c1{
+	position:absolute;
+	top:0;
+	left:2%;
+	z-index:2;
+	width:50%;
+	margin-top:10%;
+	padding-left:10%;
+	opacity:0;
+	}	
+	
+#s1c2{
+	position:absolute;
+	top:0;
+	width:58%;
+	right:2%;
+	opacity:0;
+	margin-top:10%;
+	padding-right:7%;
+	z-index:1;
+	}	
+#welcome{
+	width:100%;
+	color:white;
+	font-size:22px;
+	font-weight:lighter;
+	font-family:Arial, Helvetica, sans-serif;
+	text-align:center;
+	float:left;
+	display:none;
+	}	
+#welcome2{
+	width:100%;
+	color:white;
+	font-size:36px;
+	font-weight:bolder;
+	font-family:Arial, Helvetica, sans-serif;
+	text-align:center;
+	float:left;
+	display:none;
+	}
+#five-cars{
+	width:100%;
+	height:100%;
+	}		
+#s2c1{
+	position:absolute;
+	top:44%;
+	right:38%;
+	z-index:2;
+	width:35%;
+	margin-top:12%;
+	padding-left:10%;
+	z-index:10;
+	opacity:0;
+	}
+#s2c2{
+	position:absolute;
+	top:45%;
+	opacity:0;
+	right:15%;
+	z-index:2;
+	width:45%;
+	margin-top:12%;
+	padding-left:10%;
+	z-index:9;
+	}
+#s2c3{
+	position:absolute;
+	top:47%;
+	opacity:0;
+	right:51%;
+	z-index:2;
+	width:40%;
+	margin-top:12%;
+	padding-left:10%;
+	z-index:9;
+	}			
+
+#s2c4{
+	position:absolute;
+	top:50%;
+	opacity:0;
+	right:2%;
+	z-index:2;
+	width:40%;
+	margin-top:12%;
+	padding-left:10%;
+	z-index:8;
+	}	
+
+#s2c5{
+	position:absolute;
+	top:50%;
+	opacity:0;
+	right:66%;
+	z-index:2;
+	width:40%;
+	margin-top:12%;
+	padding-left:10%;
+	z-index:8;
+	}					
+#s2c1,#s2c2,#s2c3,#s2c4,#s2c5{
+	margin-top:15%;
+	}	
+/* Slider End*/	
+
+</style>
+
+<script>
+$(document).ready(function(e) {
+    
+	load();
+function load(){
+var i=0;
+
+setTimeout(function(){$("#slider-maindiv").css("top","0%"); $("#s2c1").animate({opacity:"0",top:"44%"},1); $("#s2c2").animate({opacity:"0",right:"15%"},1); $("#s2c3").animate({opacity:"0",right:"51%"},1);$("#s2c4").animate({opacity:"0",right:"2%"},1);
+$("#s2c5").animate({opacity:"0",right:"66%"},1); $("#s1-two-cars #welcome").show(1500);
+ $("#s1-two-cars #welcome2").show(1500);$("#five-cars #welcome").hide(1); $("#five-cars #welcome2").hide(1);  },i+=0);
+
+
+$("#s1c1").animate({left:"0",opacity:"1"},800);
+i=i+800;
+setTimeout(function(){$("#s1c2").animate({right:"0",opacity:"1"},800);},i);
+
+
+setTimeout(function(){$("#slider-maindiv").css("top","-100%");$("#s1c1").animate({left:"2%",opacity:"0"},1);$("#s1c2").animate({right:"2%",opacity:"0"},1); $("#s1-two-cars #welcome").hide(1);
+ $("#s1-two-cars #welcome2").hide(1); $("#five-cars #welcome").show(1500); $("#five-cars #welcome2").show(1500); },i+=2000);
+
+setTimeout(function(){$("#s2c1").animate({opacity:"1",top:"45%"},800);},2600);
+setTimeout(function(){
+$("#s2c2").animate({opacity:"1",right:"13%"},800);
+$("#s2c3").animate({opacity:"1",right:"53%"},800);
+},i+=800);
+setTimeout(function(){
+$("#s2c4").animate({opacity:"1",right:"0%"},800);
+$("#s2c5").animate({opacity:"1",right:"68%"},800);
+},i+=800);
+setTimeout(function(){load();i=0;},6500);
+}
+	
+	
+});
+
+
+</script>
+
+</head>
+
+ <body>
+<h1 class="bg-primary text-center">Muhammad Sheheryar Noor</h1>
+<!-- Slider Start -->
+
+<div id="slider">
+<img src="images/1.jpg" class="img-responsive" width="100%" style="z-index:-1;position:fixed;"/>
+<div id="indiv-slider">
+<div id="slider-maindiv">
+
+<div id="slides">
+
+<div id="inslides">
+<div id="s1-two-cars">
+
+<div id="welcome">Welcome To The Most Stunning</div>
+<div id="welcome2">CAR DEALER WEBSITE</div>
+
+<img id="s1c1" src="images/e13ec-06-audi-s2.png" class="img-responsive"/>
+<img id="s1c2" src="images/4f45e-07-bmw-s2.png" class="img-responsive"/>
+
+
+
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+<div id="slides">
+<div id="inslides">
+<div id="five-cars">
+<div id="welcome">We Have Everything</div>
+<div id="welcome2">YOUR CAR NEEDS!</div>
+<img id="s2c1" src="images/slide1.png" class="img-responsive"/>
+<img id="s2c2" src="images/ec416-03-huydai.png" class="img-responsive"/>
+
+<img id="s2c3" src="images/1fa45-02-bmw.png" class="img-responsive"/>
+
+<img id="s2c4" src="images/35261-05-honda.png" class="img-responsive"/>
+
+<img id="s2c5" src="images/74231-04-audi.png" class="img-responsive"/>
+
+
+
+
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+<!-- Slider End --> 
+
+
+</body>
+</html>
